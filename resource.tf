@@ -4,9 +4,9 @@ resource "azurerm_resource_group" "vth" {
 }
 terraform {
   backend "azurerm" {
-    resource_group_name  = "tamopstfstates"
-    storage_account_name = "vthtamopstf"
-    container_name       = "tfstate-actions"
+    resource_group_name  = "tfstate"
+    storage_account_name = "tfstaeactions"
+    container_name       = "actions-tfstate"
     key                  = "terraform.tfstate"
   }
 }
